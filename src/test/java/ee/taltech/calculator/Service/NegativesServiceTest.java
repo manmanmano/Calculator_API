@@ -13,8 +13,8 @@ class NegativesServiceTest {
 
     @Test
     @DisplayName("empty list as input returns null")
-    void negativesService_on_empty_list_returns_empty() {
-        assertEquals(null, NegativesService.findNegatives(List.of()));
+    void negativesService_on_empty_list_returns_null() {
+        assertNull(NegativesService.findNegatives(List.of()));
     }
 
     @Test
@@ -24,7 +24,7 @@ class NegativesServiceTest {
     }
 
     @Test
-    @DisplayName("list of positives returns empty list")
+    @DisplayName("list of positives returns null")
     void negativesService_positive_list_returns_null() {
         assertNull(NegativesService.findNegatives(List.of(1, 2, 3, 4, 5)));
     }
