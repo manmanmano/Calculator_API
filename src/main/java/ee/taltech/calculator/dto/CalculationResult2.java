@@ -3,12 +3,10 @@ package ee.taltech.calculator.dto;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
-
 @Getter
 @Setter
-public class CalculationResult1 {
+public class CalculationResult2 {
+    private Integer reversed;
     private Integer maxOdd;
-    private Integer sum;
-    private List<Integer> negatives;
+    private Double average;
 }
