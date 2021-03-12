@@ -1,10 +1,12 @@
 package ee.taltech.calculator.service;
 
+import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+@Service
 public class AverageOfEvenService {
     public static Double averageOfEven(List<Integer> numbers) {
         if (numbers == null || numbers.isEmpty()) {
