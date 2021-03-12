@@ -1,4 +1,4 @@
-package ee.taltech.service;
+package ee.taltech.calculator.service;
 
 public class AverageOfEvenService {
 }
