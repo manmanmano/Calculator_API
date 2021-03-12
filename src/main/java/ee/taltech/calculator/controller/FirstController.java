@@ -24,4 +24,10 @@ public class FirstController {
         return result;
     }
 
+    @GetMapping(value = "/calculator2")
+    public CalculationResult2 calculation2(@RequestParam List<Integer> input) {
+        CalculationResult2 result = new CalculationResult2();
+        result.setAverage(AverageOfEvenService.averageOfEven(input));
+        return result;
+    }
 }
