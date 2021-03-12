@@ -3,12 +3,14 @@ package ee.taltech.calculator.Service;
 import ee.taltech.calculator.service.NegativesService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
 import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-public class NegativesServiceTest {
+class NegativesServiceTest {
 
     @Test
     @DisplayName("empty list as input returns an empty list")
@@ -24,7 +26,7 @@ public class NegativesServiceTest {
 
     @Test
     @DisplayName("list of positives returns empty list")
-    void  negativesService_positive_list_returns_empty() {
+    void negativesService_positive_list_returns_empty() {
         assertNotNull(NegativesService.findNegatives(List.of(1, 2, 3, 4, 5)));
     }
 
