@@ -26,7 +26,7 @@ public class AverageOfEvenService {
         return roundDouble((double) sum / evens.size());
     }
 
-    private static double roundDouble(double avg) {
+    public static double roundDouble(double avg) {
         BigDecimal rounded = new BigDecimal(Double.toString(avg));
         rounded = rounded.setScale(2, RoundingMode.HALF_UP);
         return rounded.doubleValue();

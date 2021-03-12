@@ -6,6 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 
+import static ee.taltech.calculator.service.AverageOfEvenService.roundDouble;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class AverageOfEvenServiceTest {
@@ -31,6 +32,7 @@ public class AverageOfEvenServiceTest {
     @Test
     @DisplayName("AverageOfEvensService returns average of even numbers on number list")
     void AverageOfEvensService_returns_average_of_evens_on_number_list() {
-        assertEquals(Double.valueOf(8), AverageOfEvenService.averageOfEven(List.of(1, 4, 5, 8, 11, 12)));
+        assertEquals(roundDouble((double) 86/3), AverageOfEvenService.averageOfEven(List.of(1, 4, 5, 10, 11, 72)));
+        assertEquals( 8, AverageOfEvenService.averageOfEven(List.of(12, 1, 3, 4, 11, 23, 8)));
     }
 }
