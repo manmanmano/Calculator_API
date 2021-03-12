@@ -5,14 +5,12 @@ import java.util.stream.Collectors;
 
 public class NegativesService {
     public static List<Integer> findNegatives(List<Integer> numbers) {
-        if (numbers == null) {
+        if (numbers == null || numbers.isEmpty()) {
             return null;
         }
-        if (numbers.isEmpty()) {
-            return List.of();
-        }
-        return numbers.stream()
+        List<Integer> negatives = numbers.stream()
                 .filter(integer -> integer < 0)
                 .collect(Collectors.toList());
+        return !negatives.isEmpty() ? negatives : null;
     }
 }

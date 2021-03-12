@@ -8,14 +8,13 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class NegativesServiceTest {
 
     @Test
-    @DisplayName("empty list as input returns an empty list")
+    @DisplayName("empty list as input returns null")
     void negativesService_on_empty_list_returns_empty() {
-        assertEquals(List.of(), NegativesService.findNegatives(List.of()));
+        assertEquals(null, NegativesService.findNegatives(List.of()));
     }
 
     @Test
@@ -26,8 +25,8 @@ class NegativesServiceTest {
 
     @Test
     @DisplayName("list of positives returns empty list")
-    void negativesService_positive_list_returns_empty() {
-        assertNotNull(NegativesService.findNegatives(List.of(1, 2, 3, 4, 5)));
+    void negativesService_positive_list_returns_null() {
+        assertNull(NegativesService.findNegatives(List.of(1, 2, 3, 4, 5)));
     }
 
     @Test
