@@ -14,6 +14,9 @@ public class AverageOfEvenService {
         List<Integer> evens = numbers.stream()
                 .filter(integer -> integer % 2 == 0)
                 .collect(Collectors.toList());
+        if (evens.isEmpty()) {
+            return Double.valueOf(0);
+        }
         Integer sum = evens.stream()
                 .mapToInt(Integer::intValue)
                 .sum();
