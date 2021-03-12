@@ -22,5 +22,15 @@ public class AverageOfEvenServiceTest {
         assertNotNull(AverageOfEvenService.averageOfEven(List.of()));
     }
 
+    @Test
+    @DisplayName("AverageOfEvensService returns 0.0 on odd list")
+    void AverageOfEvensService_returns_zero_on_odd_list() {
+        assertEquals(Double.valueOf(0), AverageOfEvenService.averageOfEven(List.of(1, 3, 5, 7)));
+    }
 
+    @Test
+    @DisplayName("AverageOfEvensService returns average of even numbers on number list")
+    void AverageOfEvensService_returns_average_of_evens_on_number_list() {
+        assertEquals(Double.valueOf(8), AverageOfEvenService.averageOfEven(List.of(1, 4, 5, 8, 11, 12)));
+    }
 }
