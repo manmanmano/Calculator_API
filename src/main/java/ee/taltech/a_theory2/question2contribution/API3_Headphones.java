@@ -36,11 +36,39 @@ public class API3_Headphones {
 
     @GetMapping(value="/{id}")
     public Headphone getSingleHeadphone(@PathVariable Long id) {
+
         return null;
     }
 
     //todo theoretical assignment
     // F write pseudocode for saving a new pair of headphones (add annotations or http method names, urls, necessary parameters)
+    // Post method (hide activity from the public)
+    // url = /addPair
+    // public void addNewHeadphones (Integer releaseYear, String manufacturer, Double price, Double rating, Integer id, boolean anc) {
+    // set releaseYear (given by manufacturer)
+    // set manufacturer (where are bought)
+    // set price (take from manufacturer)
+    // set id (must be unique)
+    // set rating (must be 0.0 since it has not been rated yet)
+    // set anc (yes or no || true or false)
+    // }
     // G write pseudocode for updating existing pair of headphones (add annotations or http method names, urls, necessary parameters)
+    // Post method to hide from public
+    // url = /updatePair
+    // public void updateHeadphones (Double price, Double rating, boolean inStock) {
+    // set price (updated, maybe discount)
+    // set rating (taken from customers)
+    // set inStock (true or false)
+    // }
     // H write pseudocode for deleting a pair of headphones (add annotations or http method names, urls, necessary parameters)
+    // Post method to hide from public
+    // url = /deletePair
+    // public void deleteHeadphones (Double price, String manufacturer, Double rating, boolean anc, Integer id, Integer releaseYear) {
+    // delete price
+    // delete manufacturer
+    // delete rating
+    // delete anc
+    // delete id
+    // delete releaseYear
+    // }
 }
