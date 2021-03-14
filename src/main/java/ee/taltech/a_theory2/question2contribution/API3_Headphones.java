@@ -1,5 +1,13 @@
 package ee.taltech.a_theory2.question2contribution;
 
+import ee.taltech.a_theory2.question2contribution.classes.Headphone;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
+import java.util.Optional;
+
 public class API3_Headphones {
 
     // todo this is contribution question
@@ -20,6 +28,16 @@ public class API3_Headphones {
     // C Add a method to query a single headphones by it's unique identifier (method content is not important - I am grading urls, annotations, names, and parameters)
     // D Modify an existing method to query/filter headphones by price while keeping existing functionality (price can be a string)
     // E Modify an existing method to query/filter anc (active noise cancellation) while keeping existing functionality (anc can be a string)
+
+    @GetMapping(value="/")
+    public List<Headphone> getAllHeadphones (@RequestParam Optional<String> price, Optional<String> anc) {
+        return null;
+    }
+
+    @GetMapping(value="/{id}")
+    public Headphone getSingleHeadphone(@PathVariable Long id) {
+        return null;
+    }
 
     //todo theoretical assignment
     // F write pseudocode for saving a new pair of headphones (add annotations or http method names, urls, necessary parameters)

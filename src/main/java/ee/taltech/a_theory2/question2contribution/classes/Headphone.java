@@ -1,5 +1,10 @@
 package ee.taltech.a_theory2.question2contribution.classes;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Headphone {
 
     private Long id;
