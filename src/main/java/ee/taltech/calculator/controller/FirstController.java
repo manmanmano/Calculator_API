@@ -22,6 +22,7 @@ public class FirstController {
     @GetMapping(value = "/calculator2")
     public CalculationResult2 calculation2(@RequestParam List<Integer> input) {
         CalculationResult2 result = new CalculationResult2();
+        result.setSignReversed(SignReversedService.signReversed(input));
         result.setAverage(AverageOfEvenService.averageOfEven(input));
         return result;
     }
