@@ -1,5 +1,13 @@
 package ee.taltech.a_theory2.question2contribution;
 
+import ee.taltech.a_theory2.question2contribution.classes.Phone;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
+import java.util.Optional;
+
 public class API1_Phones {
 
  // todo this is contribution question
