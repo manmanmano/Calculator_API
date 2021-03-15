@@ -26,7 +26,9 @@ The second calculator contains the following services:
     - AverageOfEven - first filters out odd values and creates an array consisting of even ones, then calculates the average of the newly created array
 
 To give input to the API type in the searchbar:
-    - /calculator1?input?=1,-2,3,-4,5,6,-7,8 (these values can be replaced with others, this is just an example)
-    - - /calculator2?input?=1,-2,3,-4,5,6,-7,8 (these values can be replaced with others, this is just an example)
+    - /calculator1?input?=1,-2,3,-4,5,6,-7,8 
+    - /calculator2?input?=1,-2,3,-4,5,6,-7,8 
+
+N.B the values used in the two calculators can be replaced with any other. If the input is left blank such as input?= the result will be null for every service.
 
 
