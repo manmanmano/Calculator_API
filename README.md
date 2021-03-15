@@ -4,7 +4,7 @@ Swagger UI is accessible: http://localhost:8080/swagger-ui/index.html
 
 Team number: 3                                           
                                                           
-Team name: jamu                                          
+Team name: jam                                        
                                                           
 Team members:                                            
                                                           
