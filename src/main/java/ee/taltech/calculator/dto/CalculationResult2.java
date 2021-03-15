@@ -8,7 +8,7 @@ import java.util.List;
 @Getter
 @Setter
 public class CalculationResult2 {
-    private List<Integer> reversed;
+    private List<Integer> signReversed;
     private Integer maxOdd;
     private Double average;
 }
