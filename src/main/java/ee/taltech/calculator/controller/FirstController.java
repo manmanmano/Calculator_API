@@ -12,11 +12,6 @@ import java.util.List;
 @RestController
 public class FirstController {
 
-    @GetMapping(value = "/")
-    public String index() {
-        return "Greetings from Spring Boot!";
-    }
-
     @GetMapping(value = "/calculator1")
     public CalculationResult1 calculation1(@RequestParam List<Integer> input) {
         CalculationResult1 result = new CalculationResult1();
