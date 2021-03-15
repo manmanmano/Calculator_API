@@ -44,7 +44,7 @@ public class API3_Headphones {
     // F write pseudocode for saving a new pair of headphones (add annotations or http method names, urls, necessary parameters)
     // Post method (hide activity from the public)
     // url = /addPair
-    // public void addNewHeadphones (String releaseYear, String manufacturer, String price, Double rating, Long id, String anc) {
+    // public void addNewHeadphones (String releaseYear, String manufacturer, String price, String rating, Long id, String anc) {
     // set releaseYear (given by manufacturer)
     // set manufacturer (where are bought)
     // set price (take from manufacturer)
@@ -55,7 +55,7 @@ public class API3_Headphones {
     // G write pseudocode for updating existing pair of headphones (add annotations or http method names, urls, necessary parameters)
     // Post method to hide from public
     // url = /updatePair
-    // public void updateHeadphones (String price, Double rating, String inStock) {
+    // public void updateHeadphones (String price, String rating, String inStock) {
     // set price (updated, maybe discount)
     // set rating (taken from customers)
     // set inStock (yes or no)
@@ -63,7 +63,7 @@ public class API3_Headphones {
     // H write pseudocode for deleting a pair of headphones (add annotations or http method names, urls, necessary parameters)
     // Post method to hide from public
     // url = /deletePair
-    // public void deleteHeadphones (String price, String manufacturer, Double rating, String anc, Long id, String releaseYear) {
+    // public void deleteHeadphones (String price, String manufacturer, String rating, String anc, Long id, String releaseYear) {
     // delete price
     // delete manufacturer
     // delete rating

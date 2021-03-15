@@ -13,6 +13,7 @@ public class Headphone {
     private String anc;
     private String rating;
     private String releaseYear;
+    private String inStock;
     //... and more
 
     //getters and setters
