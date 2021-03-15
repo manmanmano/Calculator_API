@@ -1,6 +1,22 @@
 package ee.taltech.a_theory2.question2contribution;
 
+import ee.taltech.a_theory2.question2contribution.classes.Cake;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+import java.util.List;
+import java.util.Optional;
+
 public class API2_Cakes {
+
+    @GetMapping(value="/")
+    public List<Cake> allCakes (@RequestParam Optional<String> weight, Optional<String> name) {
+        return null;
+    }
+    @GetMapping(value="/{id}")
+    public Cake singleCake(@PathVariable Long id) {
+        return null;
+    }
 
     // todo this is contribution question
     //  this assignment is only for one team member (if this code is not committed by that team member how do I know this code was theirs?)
@@ -23,6 +39,21 @@ public class API2_Cakes {
 
     //todo theoretical assignment
     // F write pseudocode for saving a new cake (add annotations or http method names, urls, necessary parameters)
+    // Method: POST
+    // URL = "/addCake"
+    // public void addCake(Long id, String name, String sweetness, String size, String weight, String rating){
+    // set each of these variables for the new Cake
+    // }
     // G write pseudocode for updating existing cake (add annotations or http method names, urls, necessary parameters)
+    // Method: POST
+    // URL = "/updateCake"
+    // public void updateCake(String sweetness){
+    // set new sweetness for Cake
+    // }
     // H write pseudocode for deleting a cake (add annotations or http method names, urls, necessary parameters)
+    // Method: POST
+    // URL = "/deleteCake"
+    // public void deleteCake(Long id){
+    // delete whole cake with a certain id
+    // }
 }
