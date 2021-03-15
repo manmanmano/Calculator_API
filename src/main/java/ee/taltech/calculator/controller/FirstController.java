@@ -4,6 +4,7 @@ import ee.taltech.calculator.dto.CalculationResult1;
 import ee.taltech.calculator.dto.CalculationResult2;
 import ee.taltech.calculator.service.AverageOfEvenService;
 import ee.taltech.calculator.service.NegativesService;
+import ee.taltech.calculator.service.SignReversedService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
