@@ -54,7 +54,7 @@ public class FirstControllerTest {
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(jsonPath("$.signReversed").value(IsNull.nullValue()))
                 .andExpect(jsonPath("$.maxOdd").value(IsNull.nullValue()))
-                .andExpect(jsonPath("$.average").value( IsNull.nullValue()));
+                .andExpect(jsonPath("$.averageOfEven").value( IsNull.nullValue()));
     }
 
     @Test
@@ -78,7 +78,7 @@ public class FirstControllerTest {
                 .andExpect(jsonPath("$.signReversed", hasSize(5)))
                 .andExpect(jsonPath("$.signReversed", containsInAnyOrder(-4, -7, -3, 9, 5)))
                 .andExpect(jsonPath("$.maxOdd").value(7))
-                .andExpect(jsonPath("$.average").value(4.0));
+                .andExpect(jsonPath("$.averageOfEven").value(4.0));
     }
 
 
