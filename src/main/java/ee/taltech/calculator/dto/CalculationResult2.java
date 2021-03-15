@@ -10,5 +10,5 @@ import java.util.List;
 public class CalculationResult2 {
     private List<Integer> signReversed;
     private Integer maxOdd;
-    private Double averageOfEven;
+    private Double average;
 }
