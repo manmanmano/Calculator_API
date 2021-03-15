@@ -2,7 +2,7 @@ package ee.taltech.a_theory2.question2contribution;
 
 public class API1_Phones {
 
-    // todo this is contribution question
+ // todo this is contribution question
     //  this assignment is only for one team member (if this code is not committed by that team member how do I know this code was theirs?)
 
     // todo
@@ -21,8 +21,29 @@ public class API1_Phones {
     // D Modify an existing method to query/filter phones by manufacturer while keeping existing functionality
     // E Modify an existing method to query/filter phones by release year while keeping existing functionality
 
+    @GetMapping(value = "/")
+    public List<Phone> getAllPhones(@RequestParam Optional<String> manufacturer, Optional<String> releaseYear) {
+        return null;
+    }
+    @GetMapping(value = "/{id}")
+    public Phone getOnePhone(@PathVariable Long id) {
+        return null;
+    }
+
     //todo theoretical assignment
     // F write pseudocode for saving a new phone (add annotations or http method names, urls, necessary parameters)
+    // use POST method
+    // url = "/addPhone"
+    // public void addNewPhone(Long id, String manufacturer, String modelNr, String rating, String releaseYear) {
+    // set all of the attributes to the new phone}
     // G write pseudocode for updating existing phone (add annotations or http method names, urls, necessary parameters)
+    // use POST method
+    // url = "/updatePhone"
+    // public void updatePhone(String rating) {
+    // set new rating for Phone}
     // H write pseudocode for deleting a phone (add annotations or http method names, urls, necessary parameters)
+    // use POST method
+    // url = "/deletePhone"
+    // public void deletePhone(Long id) {
+    // delete the phone with the specific id}
 }
