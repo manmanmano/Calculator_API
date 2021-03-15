@@ -25,7 +25,7 @@ public class FirstController {
         CalculationResult2 result = new CalculationResult2();
         result.setSignReversed(SignReversedService.signReversed(input));
         result.setMaxOdd(MaxOddService.MaxOdd(input));
-        result.setAverage(AverageOfEvenService.averageOfEven(input));
+        result.setAverageOfEven(AverageOfEvenService.averageOfEven(input));
         return result;
     }
 }
