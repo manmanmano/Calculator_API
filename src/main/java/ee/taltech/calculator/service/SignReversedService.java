@@ -1,8 +1,11 @@
 package ee.taltech.calculator.service;
 
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class SignReversedService {
     public static List<Integer> SignReversed(List<Integer> numbers) {
         if (numbers == null) {
